@@ -1,40 +1,47 @@
 /* Branches Page Styles */
 .branches-page {
-  padding: 20px;
+  padding: 30px;
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: #eef2f7; /* Slightly softer background for better contrast */
+  font-family: 'Arial', sans-serif;
 }
 
 .branches-page h1 {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 20px;
+  color: #333; /* Darker text for better visibility */
+  font-weight: bold;
 }
 
 .branches-page p {
   font-size: 18px;
   margin-bottom: 40px;
+  color: #666; /* Secondary text color for description */
 }
 
 /* Branches Grid Layout */
 .branches-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
+  justify-items: center;
+  align-items: stretch;
 }
 
 /* Individual Branch Card */
 .branch-card {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  max-width: 320px;
 }
 
 .branch-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Branch Image */
@@ -42,34 +49,44 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 15px;
 }
 
 /* Branch Title */
 .branch-card h3 {
-  font-size: 20px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #007bff; /* Brand color for branch title */
+  font-weight: 600;
+}
+
+/* Branch Address and Description */
+.branch-card p {
+  font-size: 16px;
+  color: #444; /* Neutral text color for content */
   margin-bottom: 10px;
 }
 
-/* Branch Address */
-.branch-card p {
-  font-size: 16px;
-  color: #555;
+.branch-card strong {
+  color: #222; /* Strong text contrast for labels */
+  font-weight: bold;
 }
 
 /* View Details Button */
 .view-details-button {
-  margin-top: 10px;
-  padding: 8px 16px;
+  margin-top: 15px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .view-details-button:hover {
   background-color: #0056b3;
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }

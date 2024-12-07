@@ -1,0 +1,83 @@
+/* Lawn.css */
+
+.lawn-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.lawn-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: #444;
+}
+
+.lawn-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content h3, .content h4 {
+    color: #555;
+    margin: 5px 0;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.lawn-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.lawn-image:hover {
+    transform: scale(1.05);
+}
+
+.image-text {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Two-column layout for image boxes on larger screens */
+@media (min-width: 768px) {
+    .lawn-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box-container {
+        flex: 1 1 48%;
+        margin: 1%;
+    }
+}

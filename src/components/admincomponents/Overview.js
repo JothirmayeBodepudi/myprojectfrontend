@@ -88,6 +88,17 @@ const Overview = () => {
     `);
   };
 
+  const downloadImage = (imageFile, name) => {
+    const url = URL.createObjectURL(imageFile);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${name}-image.jpg`; // Set the default download name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className="overview-container">
       <h1>Admin Overview</h1>
@@ -116,6 +127,12 @@ const Overview = () => {
                     alt={`Uploaded by ${submission.name}`}
                     className="submission-image"
                   />
+                  <button
+                    className="btn-download"
+                    onClick={() => downloadImage(submission.images[0], submission.name)}
+                  >
+                    Download Image
+                  </button>
                 </div>
               )}
               <div className="reply-container">

@@ -53,6 +53,30 @@ const Enimities = () => {
             <p>Children's Playroom </p>
             <button onClick={() => handleNavigation('/playroom')} className="button">Visit Now</button>
           </div>
+
+          <div className="image-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSwfRc8lKE5fogLLHtozcP404Q9n6hyzFbQQ&s" alt="Children's Playroom" />
+            <p>Balcony</p>
+            <button onClick={() => handleNavigation('/balcony')} className="button">Visit Now</button>
+          </div>
+
+          <div className="image-card">
+            <img src="https://img.freepik.com/premium-photo/interior-home-design-living-room-with-open-kitchen-loft-house_41487-611.jpg" alt="Children's Playroom" />
+            <p>Kitchen</p>
+            <button onClick={() => handleNavigation('/kitchen')} className="button">Visit Now</button>
+          </div>
+
+          <div className="image-card">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/backyard-ideas-hbx1111102a-1646165550.jpg?crop=1.00xw:0.799xh;0,0.201xh&resize=1200:*" alt="Children's Playroom" />
+            <p>Lawn</p>
+            <button onClick={() => handleNavigation('/lawn')} className="button">Visit Now</button>
+          </div>
+
+          <div className="image-card">
+            <img src="https://www.mymodernhome.com/media/images/MMH-No23-3840x2160_.e6f02ed0.fill-1920x1080.format-webp.webp" />
+            <p>BedRooms</p>
+            <button onClick={() => handleNavigation('/bed-room')} className="button">Visit Now</button>
+          </div>
         </div>
       </div>
     </div>

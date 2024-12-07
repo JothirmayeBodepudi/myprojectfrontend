@@ -13,7 +13,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import axios from 'axios';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import bcrypt from 'bcryptjs'; // Import bcryptjs for hashing
 
 // Copyright component
 function Copyright(props) {
@@ -31,18 +30,6 @@ function Copyright(props) {
 
 // Material-UI default theme
 const theme = createTheme();
-
-// Validation Logic for Email
-const isValidEmail = (email) => {
-  const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/; // Only allows @gmail.com
-  return emailRegex.test(email);
-};
-
-// Validation Logic for Password
-const isValidPassword = (password) => {
-  const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,16}$/;
-  return passwordRegex.test(password);
-};
 
 // Signup Form component
 export default function Signup() {
@@ -64,40 +51,16 @@ export default function Signup() {
   // Handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setMessage(''); // Clear previous messages
-
-    // Validate email
-    if (!isValidEmail(formData.email)) {
-      setMessage('Invalid email. Must end with @gmail.com');
-      return;
-    }
-
-    // Validate password
-    if (!isValidPassword(formData.password)) {
-      setMessage(
-        'Password must have at least 1 uppercase, 1 lowercase, 1 number, 1 special character, and be between 8-16 characters.'
-      );
-      return;
-    }
+    setMessage(''); // Clear any previous messages
 
     try {
-      // Hash the password before sending it
-      const saltRounds = 10; // Number of rounds for salting
-      const hashedPassword = bcrypt.hashSync(formData.password, saltRounds);
-
-      const response = await axios.post('http://localhost:8081/api/user', {
-        name: formData.name,
-        role: formData.role,
-        email: formData.email,
-        password: hashedPassword, // Send hashed password instead of plain text
-      }, {
+      const response = await axios.post('http://localhost:8081/api/user', formData, {
         headers: { 'Content-Type': 'application/json' },
       });
-
-      setMessage(response.data); // Display success message
+      setMessage(response.data); // Display success message from backend
     } catch (error) {
       if (error.response && error.response.data) {
-        setMessage(error.response.data);
+        setMessage(error.response.data); // Display error message from backend
       } else {
         setMessage('Something went wrong. Please try again.');
       }

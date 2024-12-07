@@ -39,7 +39,7 @@ const ModernBathroom = () => {
                 <div className="box-container">
                     <div className="image-container">
                         <img 
-                            src="https://plus.unsplash.com/premium_photo-1661902468735-eabf780f8ff6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYmF0aHJvb218ZW58MHx8MHx8fDA%3" 
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREULzwFR41x8_HZOF-XcK7HJxd0nNVCdW7bA&s" 
                             alt="Luxurious Bathtub" 
                             className="bathroom-image" 
                         />
@@ -53,7 +53,7 @@ const ModernBathroom = () => {
                 <div className="box-container">
                     <div className="image-container">
                         <img 
-                            src="https://plus.unsplash.com/premium_photo-1661902468735-eabf780f8ff6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYmF0aHJvb218ZW58MHx8MHx8fDA%3" 
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsN0EsszdKAHPwqsG3ONrsxB5-n-uf8nHbkA&s" 
                             alt="Smart Bathroom Mirror" 
                             className="bathroom-image" 
                         />
@@ -67,7 +67,7 @@ const ModernBathroom = () => {
                 <div className="box-container">
                     <div className="image-container">
                         <img 
-                            src="https://plus.unsplash.com/premium_photo-1661902468735-eabf780f8ff6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwYmF0aHJvb218ZW58MHx8MHx8fDA%3" 
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThghZ7G0qCBh_PCGpVC2AfFJuJtHq90P1a3w&s" 
                             alt="Modern Shower" 
                             className="bathroom-image" 
                         />
