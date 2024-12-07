@@ -1,0 +1,128 @@
+/* General Page Styling */
+.contactus-page {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+  color: #333333;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.contactus-page h1 {
+  font-size: 2.5rem;
+  color: #87cefa; /* Light Sky Blue */
+  text-shadow: 0 0 8px #87cefa, 0 0 16px #87cefa, 0 0 24px #87cefa;
+  margin-bottom: 10px;
+}
+
+/* Subheading for instructions */
+.contactus-page p {
+  font-size: 1.2rem;
+  color: #555;
+  text-shadow: 0 0 4px #87cefa;
+  margin: 0 0 20px;
+}
+
+/* Main Form Section */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields Styling */
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #87cefa;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 2px solid #ffb3ba;
+  box-shadow: 0 0 12px #ffb3ba;
+}
+
+/* Textarea */
+.form-group textarea {
+  padding: 10px;
+  height: 120px;
+  resize: none;
+}
+
+/* Dimensions Section */
+.dimensions-container h3 {
+  color: #ffb3ba;
+  text-shadow: 0 0 8px #ffb3ba, 0 0 16px #ffb3ba;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+/* Image Upload Section */
+.image-upload-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-previews img {
+  height: 100px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #ffb3ba, 0 0 16px #ffb3ba;
+  margin: 5px;
+}
+
+/* Submit Button Styling */
+.btn-submit {
+  padding: 12px 18px;
+  font-size: 18px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #87cefa, #ffb3ba);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #87cefa, 0 0 16px #87cefa, 0 0 24px #ffb3ba;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+  box-shadow: 0 0 20px #87cefa, 0 0 40px #87cefa, 0 0 60px #ffb3ba;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form {
+    gap: 15px;
+  }
+
+  .image-previews img {
+    height: 90px;
+  }
+
+  .form-group textarea {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

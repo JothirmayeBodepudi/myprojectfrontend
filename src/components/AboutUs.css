@@ -1,0 +1,115 @@
+/* General styling for the About Us page */
+.aboutus-page {
+    display: flex; /* Sidebar and main content side by side */
+    min-height: 100vh; /* Ensure full height for the page */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px; /* Fixed width for Sidebar */
+    background-color: #2c3e50; /* Sidebar background color */
+    padding: 20px;
+    color: white;
+    min-height: 100vh; /* Full height sidebar */
+}
+
+/* Main content styles */
+.main-content {
+    flex-grow: 1; /* Take the remaining space */
+    padding: 20px;
+    background-color: #ecf0f1; /* Light background */
+    max-width: 1250px; /* Set a maximum width for the content */
+    margin-left: auto; /* Move the content to the right */
+}
+
+/* Header styles */
+.main-content h1 {
+    margin-top: 0;
+    font-size: 24px; /* Reduced font size for the header */
+    color: #333;
+}
+
+/* Paragraph styles */
+.main-content p {
+    font-size: 14px; /* Reduced font size for paragraphs */
+    line-height: 1.5; /* Slightly reduced line height for better spacing */
+    color: #555;
+    margin-bottom: 15px; /* Reduced bottom margin */
+}
+
+/* Mission and Vision sections */
+.mission-section,
+.vision-section {
+    background-color: #fff;
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    margin-bottom: 15px; /* Reduced margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission and Vision titles */
+.mission-section h2,
+.vision-section h2 {
+    font-size: 20px; /* Reduced font size for section titles */
+    color: #2c3e50;
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+/* Mission and Vision content */
+.mission-section p,
+.vision-section p {
+    font-size: 14px; /* Consistent font size for mission/vision content */
+    color: #444;
+    line-height: 1.5; /* Maintain line height for readability */
+}
+
+/* Team section */
+.team-section {
+    margin-top: 30px; /* Reduced top margin */
+}
+
+/* Team section title */
+.team-section h2 {
+    font-size: 20px; /* Reduced font size for team section title */
+    color: #2c3e50;
+    margin-bottom: 15px; /* Reduced bottom margin */
+}
+
+/* Team members grid layout */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for team members */
+    gap: 15px; /* Reduced space between cards */
+}
+
+/* Team member card styles */
+.team-card {
+    background-color: #fff;
+    padding: 15px; /* Reduced padding */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+/* Team member card hover effect */
+.team-card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+/* Team member image styles */
+.team-card img {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Adjusted height for better visibility of faces */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    object-position: top; /* Align the image to the top to capture faces better */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 8px; /* Reduced margin below image */
+}
+
+/* Team member name styles */
+.team-card p {
+    font-size: 14px; /* Reduced font size for names */
+    font-weight: bold; /* Bold text for names */
+    color: #333; /* Dark text color for contrast */
+}

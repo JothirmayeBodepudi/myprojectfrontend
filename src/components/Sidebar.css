@@ -1,0 +1,74 @@
+/* Sidebar Container */
+.sidebar {
+  width: 250px;
+  background-color: #2b3a42;
+  padding: 20px;
+  position: fixed; /* Sidebar stays fixed while scrolling */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Allows scrolling if content exceeds viewport */
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Sidebar List */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Sidebar Item */
+.sidebar-item {
+  margin-bottom: 15px;
+}
+
+/* Container around each item (Box appearance) */
+.item-container {
+  background-color: #394a52;
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Link inside the container */
+.item-container a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block; /* Ensures the link takes up the full container */
+}
+
+/* Hover effect to highlight the container */
+.item-container:hover {
+  background-color: #4b5a63;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Active link styling */
+.item-container a.active {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* Responsive Sidebar for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative; /* Disable fixed positioning on small screens */
+    height: auto; /* Remove full-height */
+  }
+
+  .item-container {
+    padding: 10px; /* Reduce padding for small screens */
+  }
+}

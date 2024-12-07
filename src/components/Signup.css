@@ -1,0 +1,63 @@
+
+
+/* Styling for the main container with a glassy effect */
+.MuiContainer-root {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Glassy blur effect */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 400px; /* Adjust width as needed */
+  margin: auto;
+}
+
+/* Avatar styling */
+.MuiAvatar-root {
+  background-color: #1976d2 !important;
+}
+
+/* Typography for the sign-up title */
+.MuiTypography-h5 {
+  font-weight: 600;
+  color: #fff; /* White for better contrast on glassy background */
+}
+
+/* Styling the TextField elements */
+.MuiTextField-root {
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque white background */
+  border-radius: 4px;
+}
+
+/* Select box styling */
+.MuiSelect-root {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Button styling */
+.MuiButton-contained {
+  background-color: #1976d2 !important;
+  color: #fff;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.MuiButton-contained:hover {
+  background-color: #115293 !important;
+}
+
+/* Checkbox and label styling */
+.MuiFormControlLabel-label {
+  color: #fff; /* White text for better readability */
+}
+
+/* Link styling */
+.MuiLink-root {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.MuiLink-root:hover {
+  text-decoration: underline;
+}

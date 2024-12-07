@@ -1,0 +1,77 @@
+.admin-login-container {
+  margin: auto;
+  padding: 25px 30px;
+  max-width: 400px;
+  background: #ffffff; /* Clean white background */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+
+.admin-login-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Bold and prominent header */
+  color: #333; /* Darker, readable text */
+  font-weight: 600; /* Slightly bold */
+}
+
+.admin-login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all elements */
+  gap: 15px; /* Add uniform spacing between elements */
+}
+
+.admin-login-container input {
+  width: 100%; /* Stretch to the container's width */
+  max-width: 350px; /* Limit the maximum width */
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Light border for inputs */
+  border-radius: 5px;
+  background: #f9f9f9; /* Subtle input background */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth focus transition */
+  box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+.admin-login-container input:focus {
+  border-color: #007bff; /* Highlighted border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3); /* Light glow on focus */
+  outline: none; /* Remove default focus outline */
+}
+
+.admin-login-container input::placeholder {
+  color: #aaa; /* Subtle placeholder text */
+  font-style: italic;
+}
+
+.admin-login-container button {
+  width: 100%; /* Full width button */
+  max-width: 350px; /* Limit maximum width */
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient button */
+  color: #fff; /* Bright text color */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover transition */
+}
+
+.admin-login-container button:hover {
+  background: linear-gradient(90deg, #0056b3, #004494); /* Slightly darker gradient on hover */
+  transform: translateY(-2px); /* Subtle lifting effect */
+}
+
+.admin-login-container button:active {
+  background: #004494; /* Even darker on click */
+  transform: translateY(1px); /* Slight press effect */
+}
+
+.admin-login-container small {
+  margin-top: 15px;
+  color: #666; /* Subtle small text color */
+  font-size: 0.85rem;
+}

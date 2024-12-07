@@ -1,0 +1,73 @@
+.overview-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .submissions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .submission-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    transition: transform 0.2s ease;
+  }
+  
+  .submission-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .submission-header {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .submission-details {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .image-container {
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .submission-image {
+    max-height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  
+  .reply-container {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .btn-reply {
+    padding: 8px 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-reply:hover {
+    background-color: #0056b3;
+  }
+  

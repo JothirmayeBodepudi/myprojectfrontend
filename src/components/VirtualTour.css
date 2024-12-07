@@ -1,0 +1,47 @@
+/* Virtual Tour Page Styles */
+.virtual-tour-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background color */
+}
+
+.tour-heading {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.tour-videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set to 2 columns */
+    gap: 20px; /* Space between video frames */
+    width: 100%; /* Full width */
+}
+
+.tour-frame-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Round corners and hide overflow */
+}
+
+.tour-frame {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.tour-description {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .tour-videos {
+        grid-template-columns: 1fr; /* Stack to 1 column on smaller screens */
+    }
+}
