@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
+
 import './App.css';
 import ForgotPassword from './components/ForgotPassword';
 import SignUp from './components/SignUp';
@@ -27,6 +30,10 @@ import Balcony from './components/Balcony';
 import Kitchen from './components/Kitchen';
 import Lawn from './components/Lawn';
 import Bedroom from './components/Bedroom';
+
+
+// Stripe's publishable key
+const stripePromise = loadStripe('pk_test_51P9tR6SDx5VPoKUcoCXAITsGKRrAgVru6fxNg4SOwycDmfS3Eq5zHbzZn6NxbpCEyJOGqUlOrYW5bQDCm1yINM0000Kz92ySLe');
 
 function App() {
   const [submissions, setSubmissions] = useState([]); // Shared state for storing form submissions
@@ -58,8 +65,10 @@ function App() {
           <Route path="playroom" element={<ModernPlayroom />} />
           <Route path="balcony" element={<Balcony />} />
           <Route path="kitchen" element={<Kitchen />} />
-          <Route path="lawn" element={<Lawn />}  />
+          <Route path="lawn" element={<Lawn />} />
           <Route path="bed-room" element={<Bedroom />} />
+          
+        
         </Routes>
       </Router>
     </DataContext.Provider>
